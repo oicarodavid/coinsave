@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coinsave - Dashboard</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app-container">
+        <nav class="desktop-sidebar">
+            <div class="logo-area">
+                <i class="bi bi-wallet2"></i> Coinsave
+            </div>
+            <div class="sidebar-menu">
+                <a href="#" class="sidebar-item active">
+                    <i class="bi bi-house-door"></i> Início
+                </a>
+                <a href="#" class="sidebar-item">
+                    <i class="bi bi-plus-circle"></i> Nova Despesa
+                </a>
+                <a href="#" class="sidebar-item">
+                    <i class="bi bi-text-left"></i> Extrato
+                </a>
+                <a href="#" class="sidebar-item">
+                    <i class="bi bi-flag"></i> Metas
+                </a>
+                <div class="mt-auto pt-4 border-top">
+                    <a href="#" class="sidebar-item text-danger">
+                        <i class="bi bi-box-arrow-left"></i> Sair
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <main class="main-content">
+
+            <div class="dashboard-header">
+                <div class="d-flex align-items-center gap-3">
+                    <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
+                        style="width:40px; height:40px;">
+                        <i class="bi bi-person fs-5"></i>
+                    </div>
+                    <div class="d-none d-md-block">
+                        <div class="fw-bold">Olá, Usuário</div>
+                        <div class="small text-muted">Bem-vindo de volta</div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                    <div class="dropdown">
+                        <button class="btn btn-sm btn-light fw-bold dropdown-toggle px-3" type="button">
+                            Outubro
+                        </button>
+                    </div>
+                    <i class="bi bi-bell fs-5 text-muted"></i>
+                </div>
+            </div>
+
+            <div class="dashboard-content">
+                <div class="row">
+
+                    <div class="col-lg-8 mb-4">
+                        <div class="text-center text-md-start mb-4 py-3">
+                            <span class="text-muted small">Saldo atual</span>
+                            <div
+                                class="d-flex align-items-center justify-content-center justify-content-md-start gap-3">
+                                <h1 class="fw-bold mb-0 display-5">R$ 2.541,54</h1>
+                                <i class="bi bi-eye text-primary cursor-pointer"></i>
+                            </div>
+                        </div>
+
+                        <div class="row g-3 mb-4">
+                            <div class="col-6">
+                                <div class="card p-3 h-100 d-flex flex-row align-items-center gap-3">
+                                    <div class="icon-circle bg-green-light">
+                                        <i class="bi bi-arrow-up-short"></i>
+                                    </div>
+                                    <div>
+                                        <div class="small text-muted">Receitas</div>
+                                        <div class="fw-bold text-success fs-5">R$ 7.821,95</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card p-3 h-100 d-flex flex-row align-items-center gap-3">
+                                    <div class="icon-circle bg-red-light">
+                                        <i class="bi bi-arrow-down-short"></i>
+                                    </div>
+                                    <div>
+                                        <div class="small text-muted">Despesas</div>
+                                        <div class="fw-bold text-danger fs-5">R$ 5.280,41</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card p-4 d-none d-lg-block">
+                            <h6 class="fw-bold text-secondary mb-3">Visão Geral do Mês</h6>
+                            <div class="bg-light rounded d-flex align-items-center justify-content-center"
+                                style="height: 150px; color: #ccc;">
+                                <i class="bi bi-bar-chart-fill fs-1"></i>
+                                <span class="ms-2">Área para gráficos futuros</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+
+                        <h6 class="fw-bold text-secondary mb-3">Pendências</h6>
+                        <div class="mobile-scroll-row row flex-nowrap flex-md-wrap g-3 mb-4">
+                            <div class="col-12 mobile-scroll-item">
+                                <div class="card p-3 border border-danger-subtle h-100">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <i class="bi bi-exclamation-triangle text-danger"></i>
+                                        <span class="badge bg-danger rounded-pill">5</span>
+                                    </div>
+                                    <div class="small text-muted">Despesas a pagar</div>
+                                    <div class="fw-bold text-danger">R$ 861,35</div>
+                                </div>
+                            </div>
+                            <div class="col-12 mobile-scroll-item">
+                                <div class="card p-3 border border-success-subtle h-100">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <i class="bi bi-clock-history text-success"></i>
+                                        <span class="badge bg-success rounded-pill">1</span>
+                                    </div>
+                                    <div class="small text-muted">Valores a receber</div>
+                                    <div class="fw-bold text-success">R$ 452,64</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h6 class="fw-bold text-secondary mb-3">Contas conectadas</h6>
+                        <div class="mobile-scroll-row row flex-nowrap flex-md-wrap g-3">
+                            <div class="col-12 mobile-scroll-item">
+                                <div class="card p-3">
+                                    <div class="d-flex align-items-center gap-2 mb-2">
+                                        <div class="bg-warning rounded p-1"><i class="bi bi-bank"></i></div>
+                                        <div class="small fw-bold">Conta pessoal</div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-end">
+                                        <div class="text-muted" style="font-size: 11px;">Banco do Brasil</div>
+                                        <div class="fw-bold text-success">R$ 1.427,24</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mobile-scroll-item">
+                                <div class="card p-3">
+                                    <div class="d-flex align-items-center gap-2 mb-2">
+                                        <div class="bg-primary text-white rounded p-1"><i class="bi bi-bank"></i></div>
+                                        <div class="small fw-bold">Conta salário</div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-end">
+                                        <div class="text-muted" style="font-size: 11px;">Caixa Econômica</div>
+                                        <div class="fw-bold text-success">R$ 1.114,30</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <nav class="bottom-nav">
+        <div class="nav-item-btn active">
+            <i class="bi bi-house-door-fill"></i>
+            <span>Início</span>
+        </div>
+        <div class="nav-item-btn">
+            <i class="bi bi-text-left"></i>
+            <span>Extrato</span>
+        </div>
+
+        <div class="fab-btn">
+            <i class="bi bi-plus"></i>
+        </div>
+
+        <div class="nav-item-btn">
+            <i class="bi bi-flag"></i>
+            <span>Metas</span>
+        </div>
+        <div class="nav-item-btn">
+            <i class="bi bi-list"></i>
+            <span>Menu</span>
+        </div>
+    </nav>
+
+</body>
+
+</html>
